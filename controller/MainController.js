@@ -12,14 +12,15 @@ function OcultarFormulario() {
 
 function LimpiarFormulario() {
     document.getElementById("formEstudiante").reset();
+    ActualizarLabelSalonPlataforma();
 }
 
 function NormalizarFormulario() {
     document.getElementById("TituloAgregar").textContent = "Agregar Estudiante";
     document.getElementById("botonAgregar").textContent = "Guardar Estudiante";
-    document.getElementById("botonAgregar").onclick = function() {
+    document.getElementById("botonAgregar").onclick = function () {
         AgregarEstudiante();
         OcultarFormulario();
-    }
+    };
     document.getElementById('codigoEstudiante').readOnly = false;
 }

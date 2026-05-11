@@ -3,4 +3,8 @@ class Virtual extends Estudiante {
         super(codigoEstudiante, nombresApellidos, programa, notaFinal, modalidadPrograma);
         this.plataforma = plataforma;
     }
+
+    calcularNotaDefinitiva() {
+        return parseFloat(this.notaFinal) + 0.3;
+    }
 }
